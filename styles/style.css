@@ -1,0 +1,171 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/images/back-312.gif);
+  background-repeat: repeat;
+  background-size: auto;
+  color: white;
+  font-family: ms gothic;
+  font-size: 14px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 14px;;
+}
+
+p {
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+}
+
+.content {
+  margin-bottom: 1rem;
+  gap: 1rem;
+  display: flex;
+}
+
+.section {
+  border: 1px solid #151519;
+  gap: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-top: 0rem;
+  background-color:rgba(10, 10, 12, .5);
+}
+
+aside {
+  width: 30%;
+  display: block;
+}
+
+aside .section, .box {
+  margin-bottom: 1rem;
+}
+#chat{
+  width: 40%;
+}
+
+#about p {
+  margin: 0;
+}
+#guestbook {
+  width: 60%;
+  height: 100%;
+  overflow: auto;
+  margin-right: 1rem;
+}
+#updates {
+  width: 40%;
+}
+#poll, #navlink {
+  padding-top: 1rem;
+}
+#webrings, #todo {
+  width: 50%;
+  margin-right: 1rem;
+}
+#buttons {
+  width: 60%;
+}
+#todo ul {
+  display: table;
+  margin: 0 auto;
+}
+#end {
+ width: 50% 
+}
+#aboutme {
+  padding: 1rem;
+  width: 100%;
+}
+#attributes p {
+  margin: 0;
+  padding: 5px;
+}
+#player {
+ padding: 1rem;
+}
+
+#musicBox {
+  display: flex;
+}
+#trackName {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+#artistName {
+  padding: 0;
+  margin: 0;
+}
+#listening img {
+  width: 64px;
+  height: 64px;
+}
+
+.center { /* from w3*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+#links ul {
+  line-height: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* #statuscafe {
+} */
+#statuscafe-username {
+  margin-bottom: .5em;
+}
+#statuscafe-content {
+  margin: 0 1em 0.5em 1em;
+}
+#mood {
+  padding: 0;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+#bounce {
+  animation: bounce 3s ease infinite;
+}
+@keyframes bounce {
+    0% { transform:translateY(5px); }
+    50% { transform:translateY(0px); }
+    100% { transform:translateY(5px); }
+}

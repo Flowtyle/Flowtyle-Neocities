@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowtyle's site</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="scripts/mouse.js"></script>
+    <script src="scripts/song.js"></script>
+  </head>
+  <body>
+    <header>
+      <img id="bounce" class="center" src="images/logo.png" style="image-rendering: pixelated">
+        <nav>
+          <a class="nav" href="/">home</a>
+          <a class="nav" href="aboutme.html">about me</a>
+          <a class="nav" style="text-decoration: line-through" href="">blog</a>
+          <a class="nav" style="text-decoration: line-through" href="">gallery</a>
+        </nav>
+      <br>
+    </header>
+    <div class="content">
+      <aside>
+        <div id="player" class="section">
+          <audio controls loop autoplay id="audioplayer" style="width: 182px; border-radius: 10px">
+            <source src="https://files.catbox.moe/dcuio0.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div id="status" class="section">
+          <h2>status</h2>
+          <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=flow" defer></script>
+          <p id="mood">i'm currently feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p>
+        </div>
+
+        <div id="links" class="section">
+          <h2>links</h2>
+          <ul style="margin-bottom: 0px;">
+            <li><a href="https://www.youtube.com/@flowtyle">YouTube</a></li>
+            <li><a href="https://twitter.com/flowtyle">Twitter</a></li>
+            <li><a href="https://flowtyle.tumblr.com/">Tumblr</a></li>
+            <li><a href="https://bsky.app/profile/flowtyle.neocities.org">Bluesky</a></li>
+            <li><a href="https://www.twitch.tv/flowtyle">Twitch</a></li>
+            <li><a href="https://steamcommunity.com/id/Flowtyle/">Steam</a></li>
+            <li><a href="https://sendou.ink/u/flow">sendou.ink</a></li>
+            <li><a href="https://neocities.org/site/flowtyle">Neocities</a></li>
+            <li><a href="https://ko-fi.com/flowtyle">Ko-fi</a></li>
+          </ul>
+        </div>
+
+        <!--
+        <div id="stats" class="section">
+          <h2>stats</h2>
+          <p id="created"></p>
+          <p id="updated"></p>
+          <p id="visitors"></p>
+          <p id="followers"></p>
+        </div>
+        -->
+
+        <div id="music" class="section">
+          <div id="listening">
+            <div id="musicBox">
+              <img src="">
+              <div id="trackInfo">
+                <h3 id="trackName"></h3>
+                <p id="artistName"></p>
+              </div>
+            </div>
+          </div>
+          <br>
+          <a style="padding-left: 30px; padding-right: 30px;" href="https://max.nekoweb.org/js/playingsong.js">Script from max</a>
+        </div>
+
+        <div id="poll" class="section">
+          <form method="post" action="https://poll.pollcode.com/64525883"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Trebuchet MS;font-size:small;color:#000000;box-shadow: 0px 0px 5px #888;"><div style="padding:2px 0px 4px 2px;"><strong>fav splatoon class?</strong></div><input type="radio" name="answer" value="1" id="answer645258831" style="float:left;" /><label for="answer645258831" style="float:left;width:150px;">shooter</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer645258832" style="float:left;" /><label for="answer645258832" style="float:left;width:150px;">roller</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer645258833" style="float:left;" /><label for="answer645258833" style="float:left;width:150px;">charger</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer645258834" style="float:left;" /><label for="answer645258834" style="float:left;width:150px;">sloshers</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer645258835" style="float:left;" /><label for="answer645258835" style="float:left;width:150px;">blasters</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="6" id="answer645258836" style="float:left;" /><label for="answer645258836" style="float:left;width:150px;">brushes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="7" id="answer645258837" style="float:left;" /><label for="answer645258837" style="float:left;width:150px;">splatlings</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="8" id="answer645258838" style="float:left;" /><label for="answer645258838" style="float:left;width:150px;">dualies</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="9" id="answer645258839" style="float:left;" /><label for="answer645258839" style="float:left;width:150px;">brellas</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="10" id="answer6452588310" style="float:left;" /><label for="answer6452588310" style="float:left;width:150px;">stringers</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="11" id="answer6452588311" style="float:left;" /><label for="answer6452588311" style="float:left;width:150px;">splatanas</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a style="color: black;" href="https://pollcode.com/">free polls</a></div></div></form>
+        </div>
+
+        <div id="navlink" class="section"><iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe></div>
+      </aside>
+      
+      <div>
+        <div class="box">
+          <div id="about" class="section">
+            <h2>Welcome to my site!</h2>
+            <p>Hi! My name's <b>Flow</b> and welcome to my website!</p>
+            <p>This will be my own personal website with cool stuff I like from the internet. Currently I only have the home page and an about me page. In the future I wanna make a blog, a user submitted gallery, and maybe my own games and art?</p>
+            <p>This website was made for computers in mind. If you're on mobile you might be cooked.</p>
+            <a href="https://time.is/Belfast" id="time_is_link" rel="nofollow">Local time: </a><span id="Belfast_z716"></span><script src="//widget.time.is/en_gb.js"></script><script>time_is_widget.init({Belfast_z716:{template:"TIME DATE", time_format:"hours:minutes", date_format:"dayname, monthname dnum, year"}});</script>
+            <br>
+            <br>
+            <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39984045&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39984045&main=1" /></noscript>
+            <!--<img style="width:15%" src="images/bowser-mario.gif">-->
+            <div>
+            <a href="https://tamanotchi.world/16491c"><img src="https://tamanotchi.world/i/16491" alt="feed my piece of shit son"></a>
+            <p> feed my piece of shit son</p>
+            </div>
+          </div>
+          <!--
+          <div id="chat" class="section">
+            <h2>chat</h2>
+            <iframe src="https://www5.cbox.ws/box/?boxid=953608&boxtag=ivkAyu" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+          </div>
+          -->
+        </div>
+
+      <div class="box">
+        <div id="guestbook" class="section">
+          <h2>guestbook</h2>
+            <div id="c_widget"></div>
+        </div>
+        <div id="updates" class="section">
+          <h2>site updates</h2>
+          <p>30/10/24 gave birth to fizzy</p>
+          <p>30/10/24 (12am) made logo bounce and added music player. might change music but its SMG2 world 3 and 4 for now. also added to do list</p>
+          <p>27/10/24 launched site with new layout! also reset hit counter</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div id="webrings" class="section">
+          <h2>webrings</h2>
+          <p>not in any webrings yet</p>
+        </div>
+        <div id="buttons" class="section">
+          <h2>buttons</h2>
+          <a href="https://sugarforbrains.neocities.org/"><img src="https://sugarforbrains.neocities.org/img/88x31/sugarNEW.gif"></a>
+          <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
+          <a href="https://dokodemo.neocities.org/"><img src="/images/dokodemobutton3.gif"></a>
+          <a href="https://ribo.zone/"><img src="/images/ribose.png"> </a>
+          <a href="https://neonaut.neocities.org/"><img src="/images/neonaut-banner.png"> </a>
+          <a href="https://nepeta.pet/"><img src="https://nepeta.pet/pics/nepeta-v1/buttons/button.gif"></a>
+          <a href="https://rice.nekoweb.org/" target="_blank"><img src="https://rice.nekoweb.org/rice.gif"></a>
+          <a href="https://thinliquid.dev"><img src="https://thinliquid.dev/thnlqd.png" alt="thinliquid's button" width="88" height="31" /></a>
+          <a href="https://max.nekoweb.org/"><img src="https://max.nekoweb.org/images/button.png" alt="max's apartment"></a>
+          <a href="https://medjed.nekoweb.org/"><img src="https://medjed.nekoweb.org/images/button.jpg"></a>
+          <a href="https://cyberdemon.nekoweb.org/"><img src="https://cyberdemon.nekoweb.org/button.png"> </a>
+          <a href="https://xtract.dev/"><img src="https://xtract.dev/buttons/button_space.png" alt="xtract's space"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div id="todo" class="section">
+          <h2>to do</h2>
+          <ul>
+            <li>make to do list</li>
+          </ul>
+        </div>
+        <div id="end" class="section">
+          <p>that's all for now. bye chat</p><img src="images/Bowser_Game_Over.gif">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/comment-widget.js"></script>
+  <script>
+    var audio = document.getElementById("audioplayer");
+    audio.volume = 0.05;
+  </script>
+
+  <footer>flowtyle 2024 - the end of time | made on neocities</footer>
+  </body>
+</html>
