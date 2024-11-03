@@ -12,17 +12,19 @@
     <script src="scripts/mouse.js"></script>
   </head>
   <body>
+    <header>
     <img id="bounce" class="center" src="images/logo.png" style="image-rendering: pixelated">
-      <nav>
-        <a href="/">home</a>
-        <a href="aboutme.html">about me</a>
-        <a style="text-decoration: line-through" href="">blog</a>
-        <a style="text-decoration: line-through"href="">gallery</a>
-      </nav>
-      <br>
+    <nav>
+      <a class="nav" href="/">home</a>
+        <a class="nav" href="aboutme.html">about me</a>
+        <a class="nav" href="links.html">links</a>
+    </nav>
+    </header>
+    <br>
     <div class="content">
       <aside>
         <div id="player" class="section">
+          <p class="music">Super Mario Galaxy 2<br>World 4</p>
           <audio controls loop autoplay id="audioplayer" style="width: 182px;">
             <source src="https://files.catbox.moe/cdmmxf.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -31,16 +33,16 @@
         <div id="status" class="section">
           <h2>status</h2>
           <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=flow" defer></script>
-          <p id="mood">i'm currently feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p>
+          <!-- <p id="mood">i'm currently feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p> -->
         </div>
         <div id="attributes" class="section">
           <h2>likes</h2>
-          <p>video games (nintendo/steam) <br><a href="images/steam.jpg">my steam games</a></p>
+          <p>video games (nintendo/steam) <br>--> <a href="images/steam.jpg">my steam games</a> <--</p>
           <p>competitive splatoon & smash (melee/ult)</p>
           <p>coding (c#/js/html)</p>
           <p>art (well used to...)</p>
           <p>bowser</p>
-          <p>pokemon (top 3: sceptile, aggron, zard)</p>
+          <p>pokemon (top 3: <img src="images/sceptile.png"><img src="images/aggron.png"><img src="images/zard.png">)</p>
           <p>dragons</p>
           <p>snakes & lizards & gators</p>
           <p>surfin da web...</p>
@@ -52,6 +54,7 @@
       </aside>
 
       <div id="aboutme" class="section">
+        <h2>about me</h2>
         <h3>Hi again, I'm Flow a 19 year old cringefail loserboy from the UK (i'm not british don't worry).</h3>
         <p>This website will be a little playground for me to make stuff in. I discovered neocities through hackerling's website in 2023 and discovered the magical world of the indie web. What shocked me was how unique and special it was, it was unlike anything else I've seen on the internet.</p>
         <p>I made this website in 2023 but ngl it was pure ass. It literally only had a small about me page, my social links, and a guestbook. And that's it. In 2024 after taking a gap year from uni and while looking for jobs I had this sudden drive to work on it again, and so I completely remade the website and actually used divs! (wow). I took some inspiration from other websites and fast forward a few weeks and now my new layout is released.</p>

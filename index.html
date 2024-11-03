@@ -15,17 +15,17 @@
   <body>
     <header>
       <img id="bounce" class="center" src="images/logo.png" style="image-rendering: pixelated">
-        <nav>
-          <a class="nav" href="/">home</a>
-          <a class="nav" href="aboutme.html">about me</a>
-          <a class="nav" style="text-decoration: line-through" href="">blog</a>
-          <a class="nav" style="text-decoration: line-through" href="">gallery</a>
-        </nav>
-      <br>
+      <nav>
+        <a class="nav" href="/">home</a>
+        <a class="nav" href="aboutme.html">about me</a>
+        <a class="nav" href="links.html">links</a>
+      </nav>
     </header>
+    <br>
     <div class="content">
       <aside>
         <div id="player" class="section">
+          <p class="music">Super Mario Galaxy 2<br>World 3</p>
           <audio controls loop autoplay id="audioplayer" style="width: 182px; border-radius: 10px">
             <source src="https://files.catbox.moe/dcuio0.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -34,11 +34,11 @@
         <div id="status" class="section">
           <h2>status</h2>
           <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=flow" defer></script>
-          <p id="mood">i'm currently feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p>
+          <!-- <p id="mood">i'm currently feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p> -->
         </div>
 
         <div id="links" class="section">
-          <h2>links</h2>
+          <h2>socials</h2>
           <ul style="margin-bottom: 0px;">
             <li><a href="https://www.youtube.com/@flowtyle">YouTube</a></li>
             <li><a href="https://twitter.com/flowtyle">Twitter</a></li>
@@ -77,10 +77,12 @@
         </div>
 
         <div id="poll" class="section">
-          <form method="post" action="https://poll.pollcode.com/64525883"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Trebuchet MS;font-size:small;color:#000000;box-shadow: 0px 0px 5px #888;"><div style="padding:2px 0px 4px 2px;"><strong>fav splatoon class?</strong></div><input type="radio" name="answer" value="1" id="answer645258831" style="float:left;" /><label for="answer645258831" style="float:left;width:150px;">shooter</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer645258832" style="float:left;" /><label for="answer645258832" style="float:left;width:150px;">roller</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer645258833" style="float:left;" /><label for="answer645258833" style="float:left;width:150px;">charger</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer645258834" style="float:left;" /><label for="answer645258834" style="float:left;width:150px;">sloshers</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer645258835" style="float:left;" /><label for="answer645258835" style="float:left;width:150px;">blasters</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="6" id="answer645258836" style="float:left;" /><label for="answer645258836" style="float:left;width:150px;">brushes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="7" id="answer645258837" style="float:left;" /><label for="answer645258837" style="float:left;width:150px;">splatlings</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="8" id="answer645258838" style="float:left;" /><label for="answer645258838" style="float:left;width:150px;">dualies</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="9" id="answer645258839" style="float:left;" /><label for="answer645258839" style="float:left;width:150px;">brellas</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="10" id="answer6452588310" style="float:left;" /><label for="answer6452588310" style="float:left;width:150px;">stringers</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="11" id="answer6452588311" style="float:left;" /><label for="answer6452588311" style="float:left;width:150px;">splatanas</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a style="color: black;" href="https://pollcode.com/">free polls</a></div></div></form>
+          <form method="post" action="https://poll.pollcode.com/64525883"><div style="background-color:#EEEEEE;padding:2px;color:#000000;box-shadow: 0px 0px 5px #888;"><div style="padding:2px 0px 4px 2px;"><strong>fav splatoon class?</strong></div><input type="radio" name="answer" value="1" id="answer645258831" style="float:left;" /><label for="answer645258831" style="float:left;width:150px;">shooter</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer645258832" style="float:left;" /><label for="answer645258832" style="float:left;width:150px;">roller</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer645258833" style="float:left;" /><label for="answer645258833" style="float:left;width:150px;">charger</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer645258834" style="float:left;" /><label for="answer645258834" style="float:left;width:150px;">sloshers</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer645258835" style="float:left;" /><label for="answer645258835" style="float:left;width:150px;">blasters</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="6" id="answer645258836" style="float:left;" /><label for="answer645258836" style="float:left;width:150px;">brushes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="7" id="answer645258837" style="float:left;" /><label for="answer645258837" style="float:left;width:150px;">splatlings</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="8" id="answer645258838" style="float:left;" /><label for="answer645258838" style="float:left;width:150px;">dualies</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="9" id="answer645258839" style="float:left;" /><label for="answer645258839" style="float:left;width:150px;">brellas</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="10" id="answer6452588310" style="float:left;" /><label for="answer6452588310" style="float:left;width:150px;">stringers</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="11" id="answer6452588311" style="float:left;" /><label for="answer6452588311" style="float:left;width:150px;">splatanas</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a style="color: black;" href="https://pollcode.com/">free polls</a></div></div></form>
         </div>
 
         <div id="navlink" class="section"><iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe></div>
+        
+        <!-- <div id="chat" class="section"><iframe src="https://www5.cbox.ws/box/?boxid=953608&boxtag=ivkAyu" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	</div> -->
       </aside>
       
       <div>
@@ -95,10 +97,6 @@
             <br>
             <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39984045&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39984045&main=1" /></noscript>
             <!--<img style="width:15%" src="images/bowser-mario.gif">-->
-            <div>
-            <a href="https://tamanotchi.world/16491c"><img src="https://tamanotchi.world/i/16491" alt="feed my piece of shit son"></a>
-            <p> feed my piece of shit son</p>
-            </div>
           </div>
           <!--
           <div id="chat" class="section">
@@ -163,6 +161,9 @@
     audio.volume = 0.05;
   </script>
 
-  <footer>flowtyle 2024 - the end of time | made on neocities</footer>
+  <footer>
+    <a href="https://tamanotchi.world/16491c"><img src="https://tamanotchi.world/i/16491" alt="feed my piece of shit son"></a>
+    <p>flowtyle may 28 2023 - the end of time | made on neocities</p>
+  </footer>
   </body>
 </html>

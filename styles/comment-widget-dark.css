@@ -61,14 +61,14 @@
     padding: 20px;
     /* background-image: url('../images/sparkle-bg.gif'); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
     background-attachment: fixed;
-    /* font-family: 'Courier New'; */
+    font-family: ms gothic;
     /* font-size: 16px; */
     color: white;
 }
 
 #c_widget button, #c_widget input[type=submit] {
     padding: 4px;
-    /* font-family: 'Courier New'; */
+    font-family: ms gothic;
     text-decoration: none;
 	text-align: center;
     /* text-transform: uppercase; */
@@ -180,7 +180,7 @@
     margin-left: -10px;
     margin-right: -10px;
     padding: 10px;
-    /* font-family: Verdana; */
+    font-family: ms gothic;
     /* font-size: 14px; */
     text-align: justify;
     color: white;

@@ -102,6 +102,11 @@ aside .section, .box {
 #player {
  padding: 1rem;
 }
+.music {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
 
 #musicBox {
   display: flex;
@@ -168,4 +173,13 @@ nav {
     0% { transform:translateY(5px); }
     50% { transform:translateY(0px); }
     100% { transform:translateY(5px); }
+}
+
+footer {
+  line-height: 0px;
+  padding: 0px;
+}
+
+table {
+  text-align: left;
 }
