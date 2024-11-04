@@ -6,7 +6,7 @@ body {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(/images/back-312.gif);
+  background-image: url(/images/space.gif);
   background-repeat: repeat;
   background-size: auto;
   color: white;
@@ -36,7 +36,6 @@ p {
 }
 
 .content {
-  margin-bottom: 1rem;
   gap: 1rem;
   display: flex;
 }
@@ -182,4 +181,14 @@ footer {
 
 table {
   text-align: left;
+
+}
+
+table, th, td {
+  padding: 0.5rem;
+}
+
+#website p {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
