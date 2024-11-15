@@ -1,0 +1,240 @@
+body {
+  background-image: url(../images/space.gif);
+  background-repeat: repeat;
+  background-size: auto;
+  color: white;
+  background-color: black;
+  font-family: MS Gothic, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.all *:hover{
+  cursor: url(../images/cursor.png), auto;
+}
+.all:active *:hover{
+  cursor: url(../images/cursor.png), auto;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+p {
+  padding: 10px;
+}
+
+.nav {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box {
+  display: flex;
+}
+
+header, main, footer {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  border: 1px solid #151519;
+  gap: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-top: 0rem;
+  background-color:rgba(10, 10, 12, .5);
+}
+
+aside {
+  width: 30%;
+  display: block;
+}
+
+aside .section, .box {
+  margin-bottom: 1rem;
+}
+#chat{
+  width: 40%;
+}
+
+#about p {
+  margin: 0;
+}
+#guestbook {
+  width: 60%;
+  height: 100%;
+  /* overflow: auto; */
+  margin-right: 1rem;
+}
+#updates {
+  width: 40%;
+  height: 557.2px;
+}
+#updates2 {
+  height: 500px;
+  /* overflow: auto; */
+}
+#updates2 p {
+  margin: 0;
+}
+#poll, #navlink {
+  padding-top: 1rem;
+}
+#webrings {
+  width: 50%;
+  margin-right: 1rem;
+}
+#todo {
+  width: 50%;
+}
+#todo ul {
+  display: table;
+  margin: 0 auto;
+}
+#aboutme {
+  width: 100%;
+  height: 100%;
+}
+#attributes p {
+  margin: 0;
+  padding: 5px;
+}
+#player {
+ padding: 1rem;
+}
+.music {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll {
+  overflow-y: scroll;
+  scrollbar-width: none;  /* Firefox */
+}
+
+#musicBox {
+  display: flex;
+}
+#trackName {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+#artistName {
+  padding: 0;
+  margin: 0;
+}
+#listening img {
+  width: 64px;
+  height: 64px;
+}
+
+.center { /* from w3*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+#links ul {
+  line-height: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* #statuscafe {
+} */
+#statuscafe-username {
+  margin-bottom: .5em;
+}
+#statuscafe-content {
+  margin: 0 1em 0.5em 1em;
+}
+#mood {
+  padding: 0;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+#logo {
+  animation: bounce 3s ease infinite;
+}
+@keyframes bounce {
+    0% { transform:translateY(5px); }
+    50% { transform:translateY(0px); }
+    100% { transform:translateY(5px); }
+}
+
+#buttons {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+#buttons:hover #buttonsslide {
+  animation-play-state: paused;
+}
+#buttonsslide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+table {
+  text-align: left;
+
+}
+
+table, th, td {
+  padding: 0.5rem;
+}
+
+#website p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#sitemap {
+  margin-bottom: 1rem;
+  text-align: left;
+}
