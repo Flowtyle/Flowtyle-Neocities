@@ -104,7 +104,7 @@ aside .section, .box {
   display: table;
   margin: 0 auto;
 }
-#aboutme {
+#aboutme, #blog {
   width: 100%;
   height: 100%;
 }
@@ -238,4 +238,32 @@ table, th, td {
   margin-bottom: 1rem;
   text-align: left;
   width: 100%;
+}
+
+/* Recent Blog Posts block in index.html */
+#bloglist ul {
+  padding: 0;
+  list-style-type: none;
+}
+/* At the bottom of blog posts  also blog stuff */
+#nextprev {
+  text-align: center;
+  margin-top: 1.4em;
+}
+@media only screen and (max-width: 900px) {
+  #flex {
+    flex-wrap: wrap;
+  }
+  #navbar ul {
+    flex-wrap: wrap;
+  }
+}
+
+#blogcontainer {
+  width: 750px;
+}
+
+article {
+  text-align: left;
+  margin-bottom: 1rem;
 }

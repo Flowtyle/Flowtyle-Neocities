@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Flowtyle's website">
+    <meta name="keywords" content="Flow, Flowtyle">
+    <meta name="author" content="Flowtyle">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1050">
+    <title>{{ title }}</title>
+    <link href="{{ nesting }}styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="{{ nesting }}images/favicon.png">
+    <script src="{{ nesting }}scripts/mouse.js"></script>
+    <script src="{{ nesting }}scripts/song.js"></script>
+    <link type="text/css" rel="stylesheet" href="{{ nesting }}styles/comment-widget-dark.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img id="logo" class="center" src="{{ nesting }}images/logo.png" style="image-rendering: pixelated">
+        <nav>
+          <a class="nav" href="{{ nesting }}index.html">home</a>
+          <a class="nav" href="{{ nesting }}aboutme.html">about me</a>
+          <a class="nav" href="{{ nesting }}blog.html">blog</a>
+          <a class="nav" href="{{ nesting }}links.html">links</a>
+        </nav>
+        <br>
+      </header>
+
+      <main id="blogcontainer">
+        <!--This is where the bulk of your page lives-->
+        <div style="margin-bottom: 1rem;"class="section">
+            <article>
+                <h2>{{ title }}</h2>
+                <!--You can change how topDate looks in your .eleventy.js file-->
+                {{ date | topDate }}
+                <br>
+                <br>
+
+                {{ content | safe }}
+                
+                <!--This will take you to the next/previous blog entries if they exist-->
+                <nav id="nextprev">
+                {% if nextPost.url %}
+                <a class="next" href="{{ nextPost.url }}">next</a> |
+                {% endif %}
+                <a href="../blog.html">view other posts</a>
+                {% if prevPost.url %}
+                | <a class="previous" href="{{ prevPost.url }}">previous</a>
+                {% endif %}
+                </nav>
+            </article>
+        </div>
+        <div class="section">
+          <h2>comments</h2>
+          <div id="c_widget" class="scroll center"></div>
+        </div>
+      </main>
+
+      <footer>
+        <p style="margin: 0px; padding-bottom: 0px;"><script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=39984045&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=39984045&main=1" /></noscript> online</p>
+        <p style="padding: 0; margin: 0px;">made by flowtyle may 28 2023 - <a href="https://en.wikipedia.org/wiki/List_of_dates_predicted_for_apocalyptic_events">the end of time</a> | <a href="sitemap.html">sitemap</a> | <a href="https://neocities.org/">made on neocities</a> | <a href="https://github.com/Flowtyle/Flowtyle-Neocities" target="_blank">source code</a></p>
+      </footer>
+    </div>
+
+    <script src="{{ nesting }}scripts/comment-widget.js"></script>
+    <script>
+      var audio = document.getElementById("audioplayer");
+      audio.volume = 0.05;
+    </script>
+  </body>
+</html>

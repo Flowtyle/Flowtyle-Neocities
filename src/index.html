@@ -2,6 +2,7 @@
 layout: layout.njk
 title: Home
 nesting: "./"
+permalink: index.html
 ---
 
 <div style="gap: 1rem; margin-bottom: 0;" class="box">
@@ -73,7 +74,7 @@ nesting: "./"
         <h2>Welcome to my site!</h2>
         <p>Hi! My name's <b>Flow</b> and welcome to my website!</p>
         <p>This will be my own personal website with cool stuff I like from the internet. Currently I only have the home page, an about me page, and a links page. In the future I wanna make a blog, a user submitted gallery, and maybe my own games and art?</p>
-        <p>This website was made for computers in mind using firefox and a 1920x1080 monitor. If you're on mobile you might be cooked. Make sure you hard refresh (CTRL+SHIFT+F5) to view new updates!</p>
+        <p>This website was made for computers in mind using firefox and a 1920x1080 monitor and uses javascript. If you're on mobile you might be cooked. Make sure you hard refresh (CTRL+SHIFT+F5) to view new updates!</p>
         <p>Programmed using VSCode using a static site generator called eleventy and nunjuck.</p>
         <p><a href="https://time.is/Belfast" id="time_is_link" rel="nofollow">Local time: </a><span id="Belfast_z716"></span><script src="//widget.time.is/en_gb.js"></script><script>time_is_widget.init({Belfast_z716:{template:"TIME DATE", time_format:"hours:minutes", date_format:"dayname, monthname dnum, year"}});</script></p>
         <br>
@@ -85,6 +86,21 @@ nesting: "./"
         <iframe src="https://www5.cbox.ws/box/?boxid=953608&boxtag=ivkAyu" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
       </div>
       -->
+    </div>
+
+    <div class="box">
+      <div id="blog" class="section">
+        <h2>recent posts</h2>
+        <div id="bloglist">
+          <ul>
+            {% assign top_posts = collections.posts | reverse %}
+            {%- for post in top_posts limit:3 -%}
+              <li><a href="{{ post.data.permalink }}">{{ post.data.date | readableDate }} | {{ post.data.title }} - {{ post.data.description }}</a></li>
+            {% endfor %}
+            <li class="moreposts"><a href="blog.html">view other posts</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="box">

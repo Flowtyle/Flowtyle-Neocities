@@ -1,5 +1,11 @@
 {
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "luxon": "^3.5.0"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "watch": "npx @11ty/eleventy --watch",
+    "serve": "npx @11ty/eleventy --serve"
   }
 }
