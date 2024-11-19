@@ -34,7 +34,7 @@ const s_dstStart = ['March', 'Sunday', 4, 2]; // Example shown is the second Sun
 const s_dstEnd = ['October', 'Sunday', 4, 2]; // Example shown is the first Sunday of November at 2:00 am
 
 // Misc - Other random settings
-const s_commentsPerPage = 5; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
+const s_commentsPerPage = 3; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
 const s_maxLength = 500; // The max character length of a comment
 const s_maxLengthName = 16; // The max character length of a name
 const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)

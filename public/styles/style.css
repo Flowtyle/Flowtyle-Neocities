@@ -66,9 +66,6 @@ aside {
 aside .section, .box {
   margin-bottom: 1rem;
 }
-#chat{
-  width: 40%;
-}
 
 #about p {
   margin: 0;
@@ -76,37 +73,32 @@ aside .section, .box {
 #guestbook {
   width: 60%;
   height: 100%;
-  /* overflow: auto; */
   margin-right: 1rem;
 }
 #updates {
-  width: 40%;
-  height: 557.2px;
+  height: 350px;
+  margin-bottom: 1rem;
+  padding: 0;
+  padding-bottom: 1rem;
 }
-#updates2 {
-  height: 500px;
-  /* overflow: auto; */
+#updatescontent {
+  height: 85%;
+  overflow-y: auto;
 }
-#updates2 p {
-  margin: 0;
+#todo {
+  height: 350px;
+  padding: 0;
+  padding-bottom: 1rem;
 }
-#poll, #navlink {
+#todocontent {
+  height: 85%;
+  overflow-y: auto;
+}
+#poll, #navlink, #chat {
   padding-top: 1rem;
 }
 #webrings {
-  width: 50%;
-  margin-right: 1rem;
-}
-#todo {
-  width: 50%;
-}
-#todo ul {
-  display: table;
-  margin: 0 auto;
-}
-#aboutme, #blog {
-  width: 100%;
-  height: 100%;
+  
 }
 #attributes p {
   margin: 0;

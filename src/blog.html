@@ -9,10 +9,17 @@ permalink: blog.html
     <div id="blog" class="section">
         <h2>blog posts</h2>
         <div id="bloglist">
-            <ul class="none">
+            <ul style="margin-bottom: 0;">
                 {% assign top_posts = collections.posts | reverse %}
-                {%- for post in top_posts -%}
-                <li><a href="{{ post.data.permalink }}">{{ post.data.date | readableDate }} | {{ post.data.title }} - {{ post.data.description }}</a></li>
+                {%- for post in top_posts limit:3 -%}
+                <li>
+                    <div class="section" style="background: rgba(0,0,0,0); padding-top: 1rem; margin-bottom: 1rem;">
+                    <h2 style="padding: 0; margin: 0;"><a href="{{ post.data.permalink }}">{{ post.data.title }} | {{ post.data.date | readableDate }}</a></h2>
+                    <div class="box" style="margin-top: 1rem;">
+                        <img style="width: 100px; height: 100px; padding-right: 1rem;" src="{{ post.data.image }}"> <p style="margin: 0; padding-left: 0; padding-right: 0;">{{ post.data.description }}</p>
+                    </div>
+                    </div>
+                </li>
                 {% endfor %}
             </ul>
         </div>

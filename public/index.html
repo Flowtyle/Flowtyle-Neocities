@@ -31,7 +31,7 @@
   <aside>
     <div id="player" class="section">
       <p class="music">Super Mario Galaxy 2<br>World 1 & 2</p>
-      <audio controls loop autoplay id="audioplayer" style="width: 182px; border-radius: 10px">
+      <audio controls loop id="audioplayer" style="width: 182px; border-radius: 10px">
         <source src="https://files.catbox.moe/x4h1wp.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
@@ -39,7 +39,7 @@
     <div id="status" class="section">
       <h2>status</h2>
       <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=flow" defer></script>
-      <!-- <p id="mood">i'm currently feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p> -->
+      <p id="mood">feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p>
     </div>
 
     <div id="links" class="section">
@@ -57,15 +57,20 @@
       </ul>
     </div>
 
-    <!--
-    <div id="stats" class="section">
-      <h2>stats</h2>
-      <p id="created"></p>
-      <p id="updated"></p>
-      <p id="visitors"></p>
-      <p id="followers"></p>
+    <div id="webrings" class="section">
+      <h2>webrings</h2>
+      <div style="width: 135px; /* <- Set any width you'd like! */ margin-left:auto; margin-right:auto;">
+        <iframe style="border: none; width: 100%" src="https://neocities.jeith.com/wii-webring?site=https://flowtyle.neocities.org&variant=standard"></iframe>
+      </div>
+      <link rel="stylesheet" href="https://crtstatic.nekoweb.org/dsring/onion/onionring.css">
+      <!-- <div id='dsring'>
+        <script type="text/javascript" src="https://crtstatic.nekoweb.org/dsring/onion/onionring-variables.js"></script>
+        <script type="text/javascript" src="https://crtstatic.nekoweb.org/dsring/onion/onionring-widget.js"></script>
+      </div> -->
+      <a href="https://pkmn.caelestis.nu" rel="noopener noreferrer" style="border: 0px none; background: transparent;" title="I Choose You! :: Sceptile"><img src="images/sceptile.png" style="margin: auto -15px;"></a>
+      <a href="https://ac.kuchiki.net/" target="new"><img src="images/apollo.gif" title="pixel friends | Apollo"></a>
+      <a href="https://ac.kuchiki.net/" target="new"><img src="images/goldie.gif" title="pixel friends | Goldie"></a>
     </div>
-    -->
 
     <div id="music" class="section">
       <div id="listening">
@@ -85,9 +90,9 @@
         <form method="post" action="https://poll.pollcode.com/21356819"><div style="background-color:#000000;padding:2px;width:175px;font-family:Arial;font-size:small;color:#FFFFFF;border: 1px solid #151519;"><div style="padding:2px 0px 4px 2px;"><strong>favourite part of christmas?</strong></div><input type="radio" name="answer" value="1" id="answer213568191" style="float:left;" /><label for="answer213568191" style="float:left;width:150px;">presents</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer213568192" style="float:left;" /><label for="answer213568192" style="float:left;width:150px;">food</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer213568193" style="float:left;" /><label for="answer213568193" style="float:left;width:150px;">weather</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer213568194" style="float:left;" /><label for="answer213568194" style="float:left;width:150px;">music</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer213568195" style="float:left;" /><label for="answer213568195" style="float:left;width:150px;">friends & family</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a style="text-decoration: underline;"href="https://pollcode.com/">free polls</a></div></div></form>
     </div>
 
+    <!-- <div id="chat" class="section"><iframe src="https://www5.cbox.ws/box/?boxid=953608&boxtag=ivkAyu" width="100%" height="500" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div> -->
+
     <div id="navlink" class="section"><iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe></div>
-    
-    <!-- <div id="chat" class="section"><iframe src="https://www5.cbox.ws/box/?boxid=953608&boxtag=ivkAyu" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	</div> -->
   </aside>
   
   <div id="main">
@@ -95,27 +100,27 @@
       <div id="about" class="section">
         <h2>Welcome to my site!</h2>
         <p>Hi! My name's <b>Flow</b> and welcome to my website!</p>
-        <p>This will be my own personal website with cool stuff I like from the internet. Currently I only have the home page, an about me page, and a links page. In the future I wanna make a blog, a user submitted gallery, and maybe my own games and art?</p>
-        <p>This website was made for computers in mind using firefox and a 1920x1080 monitor and uses javascript. If you're on mobile you might be cooked. Make sure you hard refresh (CTRL+SHIFT+F5) to view new updates!</p>
-        <p>Programmed using VSCode using a static site generator called eleventy and nunjuck.</p>
-        <p><a href="https://time.is/Belfast" id="time_is_link" rel="nofollow">Local time: </a><span id="Belfast_z716"></span><script src="//widget.time.is/en_gb.js"></script><script>time_is_widget.init({Belfast_z716:{template:"TIME DATE", time_format:"hours:minutes", date_format:"dayname, monthname dnum, year"}});</script></p>
+        <p>This will be my own personal website with cool stuff I like from the internet. Currently I only have the home page, an about me page, a blog, and a links page. I have a lot of ideas such as a chatroom, collections, shrines, etc. (look at to-do)</p>
+        <p>This website was made for computers in mind using firefox, a 1920x1080 monitor, and uses javascript. Programmed using VSCode using a static site generator called eleventy and nunjuck. If you're on mobile you might be cooked. Make sure you hard refresh (CTRL+SHIFT+F5) to view new updates!</p>
+        <p>Local time: <span id="Belfast_z716"></span><script src="//widget.time.is/en_gb.js"></script><script>time_is_widget.init({Belfast_z716:{template:"TIME DATE", time_format:"hours:minutes", date_format:"dayname, monthname dnum, year"}});</script></p>
         <br>
         <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39984045&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39984045&main=1" /></noscript>
       </div>
-      <!--
-      <div id="chat" class="section">
-        <h2>chat</h2>
-        <iframe src="https://www5.cbox.ws/box/?boxid=953608&boxtag=ivkAyu" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
-      </div>
-      -->
     </div>
 
     <div class="box">
       <div id="blog" class="section">
         <h2>recent posts</h2>
         <div id="bloglist">
-          <ul>
-            <li><a href="posts/2024-11-17-New-Blog.html">2024-11-17 | new blog - first post on the blog</a></li>
+          <ul style="margin-bottom: 0;">
+            <li>
+                <div class="section" style="background: rgba(0,0,0,0); padding-top: 1rem; margin-bottom: 1rem;">
+                  <h2 style="padding: 0; margin: 0;"><a href="posts/2024-11-17-New-Blog.html">new blog | 2024-11-17</a></h2>
+                  <div class="box" style="margin-top: 1rem;">
+                    <img style="width: 100px; height: 100px; padding-right: 1rem;" src="posts/blogimages/cat.jpg"> <p style="margin: 0; padding-left: 0; padding-right: 0;">i made a blog! this was only possible since switching my site to 11ty which i thought would be complicated but it wasn't too bad. i thought a static site generator would be very complex but it's literally just making a template and adding onto it, then the computer just creates the html files which are just normal html files...</p>
+                  </div>
+                </div>
+              </li>
             
             <li class="moreposts"><a href="blog.html">view other posts</a></li>
           </ul>
@@ -126,44 +131,43 @@
     <div class="box">
       <div id="guestbook" class="section">
         <h2>guestbook</h2>
-          <div id="c_widget" class="scroll"></div>
+        <div id="c_widget"></div>
       </div>
-      <div id="updates" class="section">
-        <h2>site updates</h2>
-        <div id="updates2" class="scroll">
-          <p><b>17/11/24</b> - added the blog</p>
-          <p><b>15/11/24</b> - migrated to 11ty, added sitemap, and new poll</p>
-          <p><b>05/11/24</b> - moved buttons to the footer. idk how to make it loop the end and the start</p>
-          <p><b>03/11/24</b> - joined wiiring and added an online counter</p>
-          <p><b>03/11/24</b> - added a links page! and changed some small things</p>
-          <p><b>30/10/24</b> - gave birth to fizzy</p>
-          <p><b>30/10/24</b> - (12am) made logo bounce and added music player. also added to do list</p>
-          <p><b>27/10/24</b> - launched site with new layout! also reset hit counter</p>
+      <div style="width: 40%;">
+        <div id="updates" class="section">
+          <h2 style="margin-bottom: 0">updates</h2>
+          <div id="updatescontent">
+            <p><b>19/11/24</b> - added to blog posts display, reorganised the home page, and added stuff im doing in about me</p>
+            <p><b>17/11/24</b> - added the blog</p>
+            <p><b>15/11/24</b> - migrated to 11ty, added sitemap, and new poll</p>
+            <p><b>05/11/24</b> - moved buttons to the footer. idk how to make it loop the end and the start</p>
+            <p><b>03/11/24</b> - joined wiiring and added an online counter</p>
+            <p><b>03/11/24</b> - added a links page! and changed some small things</p>
+            <p><b>30/10/24</b> - gave birth to fizzy</p>
+            <p><b>30/10/24</b> - (12am) made logo bounce and added music player. also added to do list</p>
+            <p><b>27/10/24</b> - launched site with new layout! also reset hit counter</p>
+          </div>
+        </div>
+        <div id="todo" class="section">
+          <h2 style="margin-bottom: 0">to-do</h2>
+          <div id="todocontent">
+            <ul style="text-align: left; line-height: 1.5rem;">
+              <li>make cafe chat</li>
+              <li>make a strawpage page (drawbox/askbox)</li>
+              <li>collections page of stuff i own (mostly games)</li>
+              <li>make shrines/pages of games i've played</li>
+              <ul>
+                <li>pokemon</li>
+                <li>minecraft</li>
+                <li>animal crossing?</li>
+              </ul>
+              <li>cat shrine?</li>
+              <li>splatoon gear guide?</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="box">
-      <div id="webrings" class="section">
-        <h2>webrings</h2>
-        <div style="width: 135px; /* <- Set any width you'd like! */ margin-left:auto; margin-right:auto;">
-          <iframe style="border: none; width: 100%" src="https://neocities.jeith.com/wii-webring?site=https://flowtyle.neocities.org&variant=standard"></iframe>
-        </div>
-        <link rel="stylesheet" href="https://crtstatic.nekoweb.org/dsring/onion/onionring.css">
-        <!-- <div id='dsring'>
-          <script type="text/javascript" src="https://crtstatic.nekoweb.org/dsring/onion/onionring-variables.js"></script>
-          <script type="text/javascript" src="https://crtstatic.nekoweb.org/dsring/onion/onionring-widget.js"></script>
-        </div> -->
-        <a href="https://pkmn.caelestis.nu" rel="noopener noreferrer" style="border: 0px none; background: transparent;" title="I Choose You! :: Sceptile"><img src="images/sceptile.png" style="margin: auto -15px;"></a>
-        <a href="https://ac.kuchiki.net/" target="new"><img src="images/apollo.gif" title="pixel friends | Apollo"></a>
-        <a href="https://ac.kuchiki.net/" target="new"><img src="images/goldie.gif" title="pixel friends | Goldie"></a>
-      </div>
-      <div id="todo" class="section">
-        <h2>to do</h2>
-        <ul>
-          <li>make to do list</li>
-        </ul>
-      </div>
     </div>
     <!-- <div style="margin-bottom: 1rem;" class="section">
       <p>that's all for now. bye chat</p><img src="images/Bowser_Game_Over.gif">
@@ -183,6 +187,7 @@
             <a href="https://nepeta.pet/"><img src="https://nepeta.pet/pics/nepeta-v1/buttons/button.gif"></a>
             <a href="https://rice.nekoweb.org/" target="_blank"><img src="https://rice.nekoweb.org/rice.gif"></a>
             <a href="https://thinliquid.dev"><img src="https://thinliquid.dev/thnlqd.png" alt="thinliquid's button" width="88" height="31" /></a>
+            <a href="https://housepen.nekoweb.org/"><img src="/images/housepen.gif"></a>
             <a href="https://max.nekoweb.org/"><img src="https://max.nekoweb.org/images/button.png" alt="max's apartment"></a>
             <a href="https://medjed.nekoweb.org/"><img src="https://medjed.nekoweb.org/images/button.jpg"></a>
             <a href="https://cyberdemon.nekoweb.org/"><img src="https://cyberdemon.nekoweb.org/button.png"> </a>
@@ -190,15 +195,18 @@
             <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel"></a>
             <a href="https://swiftyshq.neocities.org"><img src="images/summeraff.gif"></a>
             <a href="https://velvetblue.neocities.org"><img src="https://files.catbox.moe/vltthb.png" alt="Velvet Blue"></a>
+            <a href="https://roboticoperatingbuddy.neocities.org/"><img src="https://file.garden/ZDrtGB-J4RNQd5ky/neocitieseng/mybutton"></a>
+
             <a href="https://neocities.org/"><img src="/images/neocities.gif"></a>
             <a href="https://www.11ty.dev/"><img src="/images/11ty.gif"></a>
             <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"/></a>
             <a href="https://tamanotchi.world" target="_blank"><img src="https://tamanotchi.world/includes/img/tamanotchi.gif" alt="TamaNOTchi Badge"></a>
+            <img src="/images/yeah.png">
           </div>
         </div>
         <a href="https://tamanotchi.world/16491c"><img src="https://tamanotchi.world/i/16491" alt="feed my piece of shit son"></a>
         <p style="margin: 0px; padding-bottom: 0px;"><script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=39984045&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=39984045&main=1" /></noscript> online</p>
-        <p style="padding: 0; margin: 0px;">made by flowtyle may 28 2023 - <a href="https://en.wikipedia.org/wiki/List_of_dates_predicted_for_apocalyptic_events">the end of time</a> | <a href="sitemap.html">sitemap</a> | <a href="https://neocities.org/">made on neocities</a> | <a href="https://github.com/Flowtyle/Flowtyle-Neocities" target="_blank">source code</a></p>
+        <p style="padding: 0; margin: 0px;">made by flowtyle may 28 2023 - <a href="https://en.wikipedia.org/wiki/List_of_dates_predicted_for_apocalyptic_events">the end of time</a> | <a href="sitemap.html">sitemap</a> | <a href="https://neocities.org/">made on neocities</a> | <a href="https://github.com/Flowtyle/Flowtyle-Neocities" target="_blank">source code</a></p><br>
       </footer>
     </div>
 
