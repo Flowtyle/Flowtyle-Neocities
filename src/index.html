@@ -14,11 +14,6 @@ permalink: index.html
         Your browser does not support the audio element.
       </audio>
     </div>
-    <div id="status" class="section">
-      <h2>status</h2>
-      <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=flow" defer></script>
-      <p id="mood">feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p>
-    </div>
 
     <div id="links" class="section">
       <h2>socials</h2>
@@ -33,6 +28,17 @@ permalink: index.html
         <li><a href="https://neocities.org/site/flowtyle">Neocities</a></li>
         <li><a href="https://ko-fi.com/flowtyle">Ko-fi</a></li>
       </ul>
+    </div>
+
+    <div id="status" class="section">
+      <h2>status</h2>
+      <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=flow" defer></script>
+      <p id="mood">feeling: <a href="https://www.imood.com/users/flow"><img src="https://moods.imood.com/display/uname-flow/fg-000000/bg-FFFFFF/imood.gif" alt="The current mood of flow at www.imood.com" border="0"></a></p>
+    </div>
+
+    <div class="section">
+      <h2>piclog</h2>
+      <a href="https://piclog.blue/profile.php?id=784"><img style="width: 100%;border: 1px solid #151519;" src="https://piclog.blue/latest.php?id=784"></a>
     </div>
 
     <div id="webrings" class="section">
@@ -70,7 +76,7 @@ permalink: index.html
 
     <!-- <div id="chat" class="section"><iframe src="https://www5.cbox.ws/box/?boxid=953608&boxtag=ivkAyu" width="100%" height="500" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div> -->
 
-    <div id="navlink" class="section"><iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe></div>
+    <div id="navlink" class="section"><iframe width="180" height="180" style="border: 1px solid #151519;" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe></div>
   </aside>
   
   <div id="main">
@@ -97,7 +103,7 @@ permalink: index.html
                 <div class="section" style="background: rgba(0,0,0,0); padding-top: 1rem; margin-bottom: 1rem;">
                   <h2 style="padding: 0; margin: 0;"><a href="{{ post.data.permalink }}">{{ post.data.title }} | {{ post.data.date | readableDate }}</a></h2>
                   <div class="box" style="margin-top: 1rem;">
-                    <img style="width: 100px; height: 100px; padding-right: 1rem;" src="{{ post.data.image }}"> <p style="margin: 0; padding-left: 0; padding-right: 0;">{{ post.data.description }}</p>
+                    <img style="width: 100px; height: 100px; margin-right: 1rem;border: 1px solid #151519;" src="{{ post.data.image }}"> <p style="margin: 0; padding-left: 0; padding-right: 0;">{{ post.data.description }}...</p>
                   </div>
                 </div>
               </li>
@@ -135,6 +141,7 @@ permalink: index.html
               <li>make cafe chat</li>
               <li>make a strawpage page (drawbox/askbox)</li>
               <li>collections page of stuff i own (mostly games)</li>
+              <li>join webrings and fanlistings</li>
               <li>make shrines/pages of games i've played</li>
               <ul>
                 <li>pokemon</li>
