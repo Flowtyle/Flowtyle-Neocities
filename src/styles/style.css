@@ -10,48 +10,46 @@ body {
   margin: 0;
 }
 
-.all *:hover{
-  cursor: url(../images/cursor.png), auto;
-}
-.all:active *:hover{
-  cursor: url(../images/cursor.png), auto;
-}
+.all *:hover{ cursor: url(../images/cursor.png), auto; }
+.all:active *:hover{ cursor: url(../images/cursor.png), auto;}
 
-h1 {
-  font-size: 40px;
-}
+h1 { font-size: 40px; }
 
-h2 {
-  font-size: 20px;
-}
+h2 { font-size: 20px; }
 
 h3 {
   font-size: 15px;
   margin: 0;
 }
 
-p {
-  padding: 10px;
-}
+p { padding: 10px; }
+
+small { font-size: 10px; }
 
 #nav {
   display: flex;
   justify-content: space-evenly;
-  text-decoration: none;
 }
 .nav {
   font-size: 20px;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.box {
-  display: flex;
-}
+.box { display: flex; }
 
 header, main, footer {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+header {
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-image: url("../images/space.gif");
+  border: 1px solid #151519;
+  border-radius: 10px;
 }
 
 .section {
@@ -68,13 +66,9 @@ aside {
   display: block;
 }
 
-aside .section, .box {
-  margin-bottom: 1rem;
-}
+aside .section, .box { margin-bottom: 1rem; }
 
-#about p {
-  margin: 0;
-}
+#about p { margin: 0; }
 #guestbook {
   width: 60%;
   height: 100%;
@@ -99,28 +93,19 @@ aside .section, .box {
   height: 85%;
   overflow-y: auto;
 }
-#poll, #navlink, #chat {
-  padding-top: 1rem;
-}
-#webrings {
-  
-}
+#poll, #navlink, #chat { padding-top: 1rem; }
 #attributes p {
   margin: 0;
   padding: 5px;
 }
-#player {
- padding: 1rem;
-}
+#player { padding: 1rem; }
 .music {
   font-size: 12px;
   padding: 0;
   margin: 0;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
-.scroll::-webkit-scrollbar {
-  display: none;
-}
+.scroll::-webkit-scrollbar { display: none; }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scroll {
@@ -128,9 +113,7 @@ aside .section, .box {
   scrollbar-width: none;  /* Firefox */
 }
 
-#musicBox {
-  display: flex;
-}
+#musicBox { display: flex; }
 #trackName {
   padding-left: 10px;
   padding-bottom: 10px;
@@ -151,14 +134,8 @@ aside .section, .box {
   margin-right: auto;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+a { color: white; }
+a:hover { color: #2600FF; }
 
 #links ul {
   line-height: 20px;
@@ -168,21 +145,15 @@ a:hover {
 
 /* #statuscafe {
 } */
-#statuscafe-username {
-  margin-bottom: .5em;
-}
-#statuscafe-content {
-  margin: 0 1em 0.5em 1em;
-}
+#statuscafe-username { margin-bottom: .5em; }
+#statuscafe-content { margin: 0 1em 0.5em 1em; }
 #mood {
   padding: 0;
   margin: 0;
   padding-top: 0.5rem;
 }
 
-#logo {
-  animation: bounce 3s ease infinite;
-}
+#logo { animation: bounce 3s ease infinite; }
 @keyframes bounce {
     0% { transform:translateY(5px); }
     50% { transform:translateY(0px); }
@@ -195,9 +166,7 @@ a:hover {
   padding: 1rem;
   margin-bottom: 1rem;
 }
-#buttons:hover #buttonsslide {
-  animation-play-state: paused;
-}
+#buttons:hover #buttonsslide { animation-play-state: paused; }
 #buttonsslide {
   display: inline-block;
   animation: 40s slide infinite linear;
@@ -211,14 +180,9 @@ a:hover {
   }
 }
 
-table {
-  text-align: left;
+table { text-align: left; }
 
-}
-
-table, th, td {
-  padding: 0.5rem;
-}
+table, th, td { padding: 0.5rem; }
 
 #website p {
   padding-top: 0px;
@@ -250,11 +214,31 @@ table, th, td {
   }
 }
 
-#blogcontainer {
-  width: 750px;
-}
+#blogcontainer { width: 750px; }
 
 article {
   text-align: left;
   margin-bottom: 1rem;
 }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover { background-color: grey; }
+.dropdown:hover .dropdown-content { display: block; }

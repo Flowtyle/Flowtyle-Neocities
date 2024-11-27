@@ -9,11 +9,12 @@
     <title>{{ title }}</title>
     <link href="{{ nesting }}styles/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/x-icon" href="{{ nesting }}images/favicon.png">
-    <script src="{{ nesting }}scripts/mouse.js"></script>
+    <!-- <script src="{{ nesting }}scripts/mouse.js"></script> -->
     <script src="{{ nesting }}scripts/song.js"></script>
     <link type="text/css" rel="stylesheet" href="{{ nesting }}styles/comment-widget-dark.css">
   </head>
   <body>
+    <script>NekoType="black"</script><h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a href="https://webneko.net">Neko</a></h1>
     <div id="container">
       <header>
         <img id="logo" class="center" src="{{ nesting }}images/logo.png" style="image-rendering: pixelated">
@@ -21,6 +22,13 @@
           <a class="nav" href="{{ nesting }}index.html">home</a>
           <a class="nav" href="{{ nesting }}aboutme.html">about me</a>
           <a class="nav" href="{{ nesting }}blog.html">blog</a>
+          <div class="dropdown">
+            <a class="nav dropbtn" href="https://flowtyle.straw.page/">strawpage <small>▼</small></a>
+            <div class="dropdown-content">
+              <a href="{{ nesting }}askbox.html">askbox</a>
+              <a href="{{ nesting }}gallery.html">gallery</a>
+            </div>
+          </div>
           <a class="nav" href="{{ nesting }}links.html">links</a>
         </nav>
         <br>

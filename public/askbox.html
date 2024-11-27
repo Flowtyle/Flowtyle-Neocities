@@ -6,7 +6,7 @@
     <meta name="author" content="Flowtyle">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1050">
-    <title>Sitemap</title>
+    <title>Askbox</title>
     <link href="./styles/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <!-- <script src="./scripts/mouse.js"></script> -->
@@ -35,32 +35,48 @@
 
       <main>
         
-<div style="gap: 1rem; margin-bottom: 0;" class="box">
-    <aside>
-        <div id="player" class="section">
-            <p class="music">Super Mario Galaxy<br>File Select 1</p>
-            <audio controls loop id="audioplayer" style="width: 182px; border-radius: 10px">
-              <source src="https://files.catbox.moe/2yrbe0.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-    </aside>
-    <div id="sitemap" class="section">
-        <h2>sitemap</h2>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="aboutme.html">about me</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="https://flowtyle.straw.page/">strawpage</a></li>
-            <ul>
-                <li><a href="askbox.html">askbox</a></li>
-                <li><a href="gallery.html">gallery</a></li>
-            </ul>
-            <li><a href="links.html">links</a></li>
-            <li>sitemap <--- you are here!</li>
-        </ul>
+<style>
+    @font-face { font-family: "ds"; src: url("../fonts/Nintendo-DS-BIOS.ttf") format("opentype"); } 
+    body {
+        background-image: url("../images/chatbg.png");
+        cursor: url(http://www.rw-designer.com/cursor-extern.php?id=7091), auto;
+    }
+    a:hover, audio:hover {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=7092), auto;}
+    #intro {
+        font-family: 'ds';
+        font-size: 32px;
+        color: black;
+        background-color: white;
+        border: 8px solid transparent;
+        border-image: url(../images/chatborder.png) 4;
+        border-radius: 6%;
+        image-rendering: pixelated;
+    }
+    #intro a { color: black; }
+    
+</style>
+
+<div class="center">
+    <p id="intro">welcome to my askbox! here i will answer any questions i get from my strawpage, from coding, my website, personal, or whatever you wanna ask.<br><a target="_blank" href="https://flowtyle.straw.page/">ask a question here</a></p>
+    <div class="box" style="margin: 0; margin-left: 244px;">
+        <div style="background-color: white; position: relative;">
+            <img style="width: 38px; height: 384px; image-rendering: pixelated;" src="../images/chattopleft.png">
+        </div>
+        <!-- <div style="background-color: white;">
+            <img style="width: 38px; image-rendering: pixelated;" src="../images/chattoplefttop.png">
+            <div style="width: 38px; height: 57%; background-image: url(../images/chattopleftmiddle.png); background-repeat: repeat-y; image-rendering: pixelated; position: relative; top: -4px;"></div>
+            <img style="width: 38px; image-rendering: pixelated;" src="../images/chattopleftbottom.png">
+        </div> -->
+        <div style="width: 474px; padding-top: 4px; background-image: url(../images/chatbg3.png);">
+            <img style="width: 468px; image-rendering: pixelated;" src="../images/chatintro.png">
+            <div id="c_widget"></div>
+        </div>
     </div>
+    <img style="width: 512px; image-rendering: pixelated;" src="../images/chatbottom.png">
 </div>
+
+<script src="scripts/comment-widget-chat.js"></script>
+
       </main>
 
       <footer>

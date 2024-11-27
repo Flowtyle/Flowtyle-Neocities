@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Flowtyle's website">
+    <meta name="keywords" content="Flow, Flowtyle">
+    <meta name="author" content="Flowtyle">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1050">
+    <title>Gallery</title>
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <!-- <script src="./scripts/mouse.js"></script> -->
+    <script src="./scripts/song.js"></script>
+  </head>
+  <body>
+    <script>NekoType="black"</script><h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a href="https://webneko.net">Neko</a></h1>
+    <div id="container">
+      <header>
+        <img id="logo" class="center" src="images/logo.png" style="image-rendering: pixelated;">
+        <nav id="nav">
+          <a class="nav" href="index.html">home</a>
+          <a class="nav" href="aboutme.html">about me</a>
+          <a class="nav" href="blog.html">blog</a>
+          <div class="dropdown">
+            <a class="nav dropbtn" href="https://flowtyle.straw.page/">strawpage <small>▼</small></a>
+            <div class="dropdown-content">
+              <a href="askbox.html">askbox</a>
+              <a href="gallery.html">gallery</a>
+            </div>
+          </div>
+          <a class="nav" href="links.html">links</a>
+        </nav>
+        <br>
+      </header>
+
+      <main>
+        
+<style>
+    @font-face { font-family: "mario_paint"; src: url("../fonts/snes-fonts-mario-paint.ttf") format("opentype"); } 
+    @font-face { font-family: "mario_paint_big"; src: url("../fonts/snes-fonts-mario-paint-big.ttf") format("opentype"); } 
+    body {
+        background-image: url("../images/paint.gif");
+        cursor: url("../images/paintcursor.png"), auto;
+    }
+    h2 { font-family: 'mario_paint_big'; font-size: 25px; }
+    a:hover {color: #2600FF;}
+    a:hover, audio:hover {cursor: url("../images/paintcursorselected.png"), auto;}
+    #paintcontainer, #paintcontainer a {
+        color: black;
+        font-family: 'mario_paint';
+    }
+    .section {
+        margin-bottom: 1rem;
+        background-color: white;
+        border-image: url(../images/paintborder2.png) 8;
+        image-rendering: pixelated;
+        border-width: 25px;
+        border-radius: 20px;
+    }
+    #gallery {
+        background-color: white;
+        border: 10px solid transparent;
+        border-image: url(../images/paintborder.png) 4;
+        image-rendering: pixelated;
+        padding: 1rem;
+    }
+    #gallery img {
+        width: 24%;
+        border: 2px solid black;
+        image-rendering: auto;
+    }
+    #paint {
+        background-color: #C6C6C6;
+        margin-bottom: 1rem;
+    }
+    #paint img {
+        width: 100%;
+        image-rendering: pixelated;
+    }
+</style>
+
+<div id="paintcontainer">
+    <div class="box">
+        <!-- <img src="../images/paintmusic.png" style="margin-right: 1rem; width: 272px; height: 320px; image-rendering: pixelated;"> -->
+        <div style="margin-right: 1rem;">
+            <div id="player" class="section">
+                <p class="music">Mario Paint<br>Creative Exercise</p>
+                <audio controls loop id="audioplayer1" style="border-radius: 10px">
+                <source src="https://files.catbox.moe/pr4ef1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div id="player" class="section">
+                <p class="music">Mario Paint<br>Monkey Song</p>
+                <audio controls loop id="audioplayer2" style="border-radius: 10px">
+                <source src="https://files.catbox.moe/5lqt9o.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div id="player" class="section">
+                <p class="music">Mario Paint<br>Mysterious</p>
+                <audio controls loop id="audioplayer3" style="border-radius: 10px">
+                <source src="https://files.catbox.moe/xky0e7.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="section">
+            <h2>gallery</h2>
+            <p>look at the wonderous drawings that anonymous users have submitted</p>
+            <p>drawings are submitted and hosted on straw.page and added manually</p>
+            <p><a target="_blank" href="https://flowtyle.straw.page/">submit a drawing here</a></p>
+            <p>(--- play a song! (might make it look like the in game ui later)</p>
+        </div>
+    </div>
+    <div id="paint">
+        <img src="../images/paintheader.png">
+        <div id="gallery">
+            <p>taking submissions!</p>
+            <a target="_blank" href="https://flowtyle.straw.page/">link to strawpage</a>
+        </div>
+        <img src="../images/paintfooter.png">
+    </div>
+</div>
+
+<script>
+    var audio = document.getElementById("audioplayer1");
+    audio.volume = 0.05;
+    var audio = document.getElementById("audioplayer2");
+    audio.volume = 0.05;
+    var audio = document.getElementById("audioplayer3");
+    audio.volume = 0.05;
+
+    document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+</script>
+      </main>
+
+      <footer>
+        <p style="margin: 0px; padding-bottom: 0px;"><script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=39984045&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=39984045&main=1" /></noscript> online</p>
+        <p style="padding: 0; margin: 0px;">made by flowtyle may 28 2023 - <a href="https://en.wikipedia.org/wiki/List_of_dates_predicted_for_apocalyptic_events">the end of time</a> | <a href="sitemap.html">sitemap</a> | <a href="https://neocities.org/">made on neocities</a> | <a href="https://github.com/Flowtyle/Flowtyle-Neocities" target="_blank">source code</a></p><br>
+      </footer>
+    </div>
+
+    <script src="scripts/comment-widget.js"></script>
+    <script>
+      var audio = document.getElementById("audioplayer");
+      audio.volume = 0.05;
+    </script>
+  </body>
+</html>
