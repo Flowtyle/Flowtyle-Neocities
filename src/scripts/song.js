@@ -11,7 +11,7 @@ let socket = new WebSocket(
     document.getElementById("listening").innerHTML = `
       <div id="listeningStatus">
       <div id="blob"></div>
-      <p id="trackStatus"></p>
+      <h2 id="trackStatus"></h2>
       </div>
       <div id="musicBox">
       <img src="${data["recenttracks"]["track"][0]["image"]["1"]["#text"]}">
@@ -23,10 +23,10 @@ let socket = new WebSocket(
       `;
   
     if (data["recenttracks"]["track"][0].nowplaying === "true") {
-      document.getElementById("trackStatus").innerHTML = "Listening to:";
+      document.getElementById("trackStatus").innerHTML = "Listening to";
       document.getElementById("blob").style.background = "#5dff8a";
     } else {
-      document.getElementById("trackStatus").innerHTML = "Last listened:";
+      document.getElementById("trackStatus").innerHTML = "Last listened";
       document.getElementById("blob").style.background = "#5d5d5d";
     }
   };

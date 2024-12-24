@@ -106,6 +106,11 @@
         <form method="post" action="https://poll.pollcode.com/21356819"><div style="background-color:#000000;padding:2px;width:175px;font-family:Arial;font-size:small;color:#FFFFFF;border: 1px solid #151519;"><div style="padding:2px 0px 4px 2px;"><strong>favourite part of christmas?</strong></div><input type="radio" name="answer" value="1" id="answer213568191" style="float:left;" /><label for="answer213568191" style="float:left;width:150px;">presents</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer213568192" style="float:left;" /><label for="answer213568192" style="float:left;width:150px;">food</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer213568193" style="float:left;" /><label for="answer213568193" style="float:left;width:150px;">weather</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer213568194" style="float:left;" /><label for="answer213568194" style="float:left;width:150px;">music</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer213568195" style="float:left;" /><label for="answer213568195" style="float:left;width:150px;">friends & family</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a style="text-decoration: underline;"href="https://pollcode.com/">free polls</a></div></div></form>
     </div>
 
+    <div class="section">
+      <h2>twitch stream</h2>
+      <div id="twitch-embed"></div>
+    </div>
+
     <!-- <div id="chat" class="section"><iframe src="https://www5.cbox.ws/box/?boxid=953608&boxtag=ivkAyu" width="100%" height="500" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div> -->
 
     <div id="navlink" class="section"><iframe width="180" height="180" style="border: 1px solid #151519;" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe></div>
@@ -204,10 +209,7 @@
         </div>
       </div>
     </div>
-    </div>
-    <!-- <div style="margin-bottom: 1rem;" class="section">
-      <p>that's all for now. bye chat</p><img src="images/Bowser_Game_Over.gif">
-    </div> -->
+  </div>
   </div>
   <div id="buttons" class="section" style="white-space: nowrap;">
     <div id="buttonsslide">
@@ -217,7 +219,7 @@
       <a href="https://ribo.zone/"><img src="/images/ribose.png"> </a>
       <a href="https://neonaut.neocities.org/"><img src="/images/neonaut.png"> </a>
       <a href="https://nepeta.pet/"><img src="https://nepeta.pet/pics/nepeta-v1/buttons/button.gif"></a>
-      <a href="https://rice.nekoweb.org/" target="_blank"><img src="https://rice.nekoweb.org/rice.gif"></a>
+      <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png"></a>
       <a href="https://thinliquid.dev"><img src="https://thinliquid.dev/thnlqd.png" alt="thinliquid's button" width="88" height="31" /></a>
       <a href="https://housepen.nekoweb.org/"><img src="/images/housepen.gif"></a>
       <a href="https://max.nekoweb.org/"><img src="https://max.nekoweb.org/images/button.png" alt="max's apartment"></a>
@@ -244,11 +246,28 @@
   <a href="https://tamanotchi.world/16491c"><img src="https://tamanotchi.world/i/16491" alt="feed my piece of shit son"></a>
 </div>
 <script src="scripts/comment-widget.js"></script>
+
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: 182,
+    height: 102,
+    channel: "flowtyle",
+    layout: 'video',
+  });
+</script>
       </main>
 
       <footer>
         <p style="margin: 0px; padding-bottom: 0px;"><script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=39984045&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=39984045&main=1" /></noscript> online</p>
-        <p style="padding: 0; margin: 0px;">made by flowtyle may 28 2023 - <a href="https://en.wikipedia.org/wiki/List_of_dates_predicted_for_apocalyptic_events">the end of time</a> | <a href="sitemap.html">sitemap</a> | <a href="https://neocities.org/">made on neocities</a> | <a href="https://github.com/Flowtyle/Flowtyle-Neocities" target="_blank">source code</a></p><br>
+        <p style="padding: 0; margin: 0px;">made by flowtyle may 28 2023 - 
+          <a href="https://en.wikipedia.org/wiki/List_of_dates_predicted_for_apocalyptic_events">the end of time</a> | 
+          <a href="sitemap.html">sitemap</a> | 
+          <a href="https://neocities.org/">made on neocities</a> | 
+          <a href="mailto:flowtyle.neocities@gmail.com">email me</a> | 
+          <a href="https://github.com/Flowtyle/Flowtyle-Neocities" target="_blank">source code</a>
+        </p><br>
       </footer>
     </div>
 
