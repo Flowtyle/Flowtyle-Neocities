@@ -106,8 +106,13 @@ aside .section, .box { margin-bottom: 1rem; }
   top: 1rem;
   right: 3.5rem;
 }
+.gPlayer {
+  padding: 1rem;
+  position: relative;
+  top: auto;
+  right: auto;
+}
 .music {
-  font-size: 12px;
   padding: 0;
   margin: 0;
 }
