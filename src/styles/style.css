@@ -100,7 +100,12 @@ aside .section, .box { margin-bottom: 1rem; }
   margin: 0;
   padding: 5px;
 }
-#player { padding: 1rem; }
+#player { 
+  padding: 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 3.5rem;
+}
 .music {
   font-size: 12px;
   padding: 0;
