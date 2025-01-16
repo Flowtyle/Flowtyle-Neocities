@@ -76,6 +76,15 @@ aside .section, .box { margin-bottom: 1rem; }
   height: 100%;
   margin-right: 1rem;
 }
+#webrings {
+  height: 300px;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+#webringscontent {
+  height: 80%;
+  overflow-y: auto;
+}
 #updates {
   height: 350px;
   margin-bottom: 1rem;
