@@ -53,6 +53,10 @@ header {
   border: 1px solid #151519;
   border-radius: 10px;
 }
+footer {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .section {
   border: 1px solid #151519;
